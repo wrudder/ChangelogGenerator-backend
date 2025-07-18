@@ -1,0 +1,61 @@
+[
+    {
+      "sha": "da7487b6816b19310b02bb69b35d72e3d7aed3b3",
+      "node_id": "C_kwDOAJy2KtoAKGRhNzQ4N2I2ODE2YjE5MzEwYjAyYmI2OWIzNWQ3MmUzZDdhZWQzYjM",
+      "commit": {
+        "author": {
+          "name": "Sebastian Markbåge",
+          "email": "sebastian@calyptus.eu",
+          "date": "2025-07-16T19:57:22Z"
+        },
+        "committer": {
+          "name": "GitHub",
+          "email": "noreply@github.com",
+          "date": "2025-07-16T19:57:22Z"
+        },
+        "message": "[Flight] Skip the stack frame of built-in wrappers that create or await Promises (#33798)\n\nWe already do this with `\"new Promise\"` and `\"Promise.then\"`. There are\nalso many helpers that both create promises and awaits other promises\ninside of it like `Promise.all`.\n\nThe way this is filtered is different from just filtering out all\nanonymous stacks since they're used to determine where the boundary is\nbetween ignore listed and user space.\n\nIdeally we'd cover more wrappers that are internal to Promise libraries.",
+        "tree": {
+          "sha": "b8c41dab51c4f4f263035414170c9b6a065b0501",
+          "url": "https://api.github.com/repos/facebook/react/git/trees/b8c41dab51c4f4f263035414170c9b6a065b0501"
+        },
+        "url": "https://api.github.com/repos/facebook/react/git/commits/da7487b6816b19310b02bb69b35d72e3d7aed3b3",
+        "comment_count": 0,
+        "verification": {
+          "verified": true,
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoeAQiCRC1aQ7uu5UhlAAAsfEQACZ75rtnWGrvDJksMBixM7PN\nu6yimyIxUXGiNubTHa16f2wO94ECyGh6da2adG0wBAUr3dVAya+Wy9TCbRn0020R\nqcwiR9XFarXI/NaBkM1OkkyZ7joGrHUuViCvIGGScr0pa0NnrcHkuC/K/XIFXuJj\nV90d3ZwpEEIqYc2H92d4NZOHx6SR8ols5fBZ8aKgm6NFDSwlh+YrOzTinEvvvbPd\ncsogpRzGC/FtH6/JKPrHZVrZMIyLQA5wfhQ2WcjuPUn3wKEf2/8FNiCwdwwDYECw\nblkkpu1o84hIv6gIb0OTEUzMkYmWjBEIq1ka2o6VJ+mB3jruVaRE5G7QbXJ54eIJ\nQSNY0gPZ3CSLpS38Em+8ILZDPvYu82rqyZAQllLna1M3TpMRq8GQ1FSSEbgHGsPC\n9Ht2/ZaJwYEFMlCJEtsSlXL1ICmKHQPOqmNj/TWLl0QzbeQdefXM7wkVRdt6+8zN\nUeso96xg1nAS/CS78FQnL5ZQW+/zpLrg72Bm8of7+wDe1FS14xRDRgNt9XWRPlHE\ncPZqw2mA2uW49L71GlTd7eONl2oM38Jqz2ugI3OQru3cMB3wMCJoKAkEp72HfFz4\nzWtpbreTHK5lGKzyM83A+TDXcx8fLyjAcn+LU7dShR1U1JxZeX4zkvckN18clnmE\nfi2/uLAHeW7HBc6/yBHB\n=v6Ty\n-----END PGP SIGNATURE-----",
+          "payload": "tree b8c41dab51c4f4f263035414170c9b6a065b0501\nparent 9fec565a9b9f78558323adff1013291cf46f7de7\nauthor Sebastian Markbåge <sebastian@calyptus.eu> 1752695842 -0400\ncommitter GitHub <noreply@github.com> 1752695842 -0400\n\n[Flight] Skip the stack frame of built-in wrappers that create or await Promises (#33798)\n\nWe already do this with `\"new Promise\"` and `\"Promise.then\"`. There are\nalso many helpers that both create promises and awaits other promises\ninside of it like `Promise.all`.\n\nThe way this is filtered is different from just filtering out all\nanonymous stacks since they're used to determine where the boundary is\nbetween ignore listed and user space.\n\nIdeally we'd cover more wrappers that are internal to Promise libraries.",
+          "verified_at": "2025-07-16T19:57:23Z"
+        }
+      },
+      "url": "https://api.github.com/repos/facebook/react/commits/da7487b6816b19310b02bb69b35d72e3d7aed3b3",
+      "html_url": "https://github.com/facebook/react/commit/da7487b6816b19310b02bb69b35d72e3d7aed3b3",
+      "comments_url": "https://api.github.com/repos/facebook/react/commits/da7487b6816b19310b02bb69b35d72e3d7aed3b3/comments",
+      "author": {
+        "login": "sebmarkbage",
+        "id": 63648,
+        "node_id": "MDQ6VXNlcjYzNjQ4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63648?v=4",
+        "url": "https://api.github.com/users/sebmarkbage",
+        "html_url": "https://github.com/sebmarkbage",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "9fec565a9b9f78558323adff1013291cf46f7de7",
+          "url": "https://api.github.com/repos/facebook/react/commits/9fec565a9b9f78558323adff1013291cf46f7de7",
+          "html_url": "https://github.com/facebook/react/commit/9fec565a9b9f78558323adff1013291cf46f7de7"
+        }
+      ]
+    }
+  ]
+  
